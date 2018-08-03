@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <title>Proč volit Zelené?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="title" content="Proč volit Zelené?" />
+    <meta property="og:title" content="Proč volit Zelené?" />
+    <meta property="og:site_name" content="Proč volit Zelené?"/>
+    <meta property="og:image" content="http://www.procvolitzelene.cz/preview.png" />
+		<meta name="keywords" content="komunální volby, Strana zelených" />
+		<meta name="description" content="Zjisti si, jak se shoduješ s programem Strany zelených pro městskou část Brno–střed v komunálních volbách 2018." />
+		<meta property="og:description" content="Zjisti si, jak se shoduješ s programem Strany zelených pro městskou část Brno–střed v komunálních volbách 2018." />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" charset="utf-8"></script>
+    <script src="q.js" charset="utf-8"></script>
+    <script src="/procvolit.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="/procvolit.css"/>
+    <script>$(document).ready(init);</script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="inside">
+        <div class="headline"><a href="/">PROČ VOLIT ZELENÉ?</a></div>
+        <div class="social">
+          <a target="_blank" class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.procvolitzelene.cz/"></a>
+          <a target="_blank" class="twitter" href="https://twitter.com/home?status=http%3A//www.procvolitzelene.cz/"></a>
+        </div>
+      </div>
+    </div>
+    <div id="envelope">
+      <div class="tagline long">Zjisti si, jak se shoduješ s programem Strany zelených pro Brno–střed.</div>
+      <div class="tagline short">Brno–střed</div>
+      <div id="invelope">
+        <div class="mid"><span tabindex="0" class="button" id="start">Začít »</span></div>
+      </div>
+      <div id="summary">
+        <div id="nav">
+          <span tabindex="0" class="button" style="display: none" id="prev">«</span>
+          <span tabindex="0" class="button" style="display: none" id="next">Další »</span>
+          <span tabindex="0" class="button" style="display: none" id="final">Vyhodnotit »</span>
+          <span tabindex="0" class="button" style="display: none" id="again">Začít znova</span>
+        </div>
+        <div id="score" style="display: none">
+          <span class="icon yes">0</span>
+          <span class="icon no">0</span>
+          <span class="icon maybe" style="display: none">0</span>
+        </div>
+        <div id="tools" style="display: none">
+          <span tabindex="0" id="restart" style="display: none">Začít znova</span>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="inside">
+        <p class="bold">Proč volit Zelené?</p>
+        <p>Zjisti si, jak se shoduješ s programem Strany zelených pro městskou část Brno–střed v komunálních volbách 2018.</p>
+        <p>Autor této aplikace je <a target="_blank" href="http://www.lexiconista.com/cs/">Michal Boleslav Měchura</a>. Toto není oficiální stránka Strany zelených.
+      </div>
+      <div class="inside">
+        <p>
+          <div><a target="_blank" class="external" href="http://brnostred.zeleni.cz/">Zelení Brno–střed »</a></div>
+          <div><a target="_blank" class="external" href="http://zelenebrno.cz/">Zelené Brno »</a></div>
+          <div><a target="_blank" class="external" href="https://www.zeleni.cz/">Strana zelených »</a></div>
+          <div><a target="_blank" class="external" href="https://europeangreens.eu/">Evropská strana zelených »</a></div>
+        </p>
+      </div>
+      <div class="inside">
+        <div class="social">
+          <a target="_blank" class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.procvolitzelene.cz/"></a>
+          <a target="_blank" class="twitter" href="https://twitter.com/home?status=http%3A//www.procvolitzelene.cz/"></a>
+        </div>
+        <a target="_blank" class="github" href="https://github.com/michmech/procvolit">github.com/michmech/procvolit</a>
+      </div>
+    </div>
+    <div id="templates" style="display: none">
+
+      <div id="templateQuestion">
+        <div>
+          <div class="title">Otázka <span class="questionNumber">x</span> z <span class="questionTotal">x</span></div>
+          <div class="question">Lorem ipsum?</div>
+          <div class="answers"></div>
+        </div>
+      </div>
+
+      <div id="templateAnswer">
+        <div tabindex="0" class="answer">
+          <div class="bubble">Lorem ipsum.</div>
+          <div class="callout"></div>
+        </div>
+      </div>
+
+      <div id="templateVerdict">
+        <div>
+          <div class="finalscore">
+            <span class="icon yes">X</span>
+            <span class="icon no">X</span>
+            <span class="icon maybe">X</span>
+          </div>
+          <div class="verdict">Lorem ipsum.</div>
+          <div class="subverdict">Volby budou 5. a 6. října 2018. Děkujeme za podporu.</div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

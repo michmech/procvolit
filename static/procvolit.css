@@ -1,0 +1,150 @@
+body {font-family: sans-serif; background-color: #ffffff; margin: 0; padding: 0; line-height: 1.3em; font-size: 1rem;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+div#header {background-color: #2d934d;}
+div#header > div.inside {max-width: 1000px; margin: 0px auto; padding: 20px 0px; font-size: 1.4em; position: relative;}
+div#header div.headline {color: #ffffff; font-weight: bold;}
+div#header div.headline a {color: #ffffff; text-decoration: none;}
+div#header div.headline a:hover {color: #eeeeee;}
+div#header div.social {position: absolute; top: 13px; right: 0px;}
+div#header div.social a {width: 30px; height: 30px; display: inline-block; border: 2px solid #cccccc; border-radius: 20px; margin-left: 5px;}
+div#header div.social a:hover {border-color: #dddddd;}
+div#header div.social a.facebook {background-image: url(social-facebook.png);}
+div#header div.social a.twitter {background-image: url(social-twitter.png);}
+@media (max-width: 1040px){
+  div#header > div.inside {margin: 0px 20px;}
+}
+@media (max-width: 600px){
+  div#header div.social {display: none;}
+}
+
+div#footer {background-color: #e6e6e6; min-height: 300px; padding: 25px 0px;}
+div#footer > div.inside {max-width: 1000px; margin: 0px auto 20px auto; color: #666666; text-shadow: 1px 1px 0px #ffffff; line-height: 1.5em; position: relative;}
+div#footer p {margin: 0.25em 0;}
+div#footer p.bold {font-weight: bold;}
+div#footer a {color: #0b6377; text-decoration: none;}
+div#footer a:hover {color: #0a768f;}
+div#footer div.social {}
+div#footer div.social a {width: 30px; height: 30px; display: inline-block; border-radius: 20px; margin-right: 5px; background-position: center; background-repeat: no-repeat;}
+div#footer div.social a.facebook {background-image: url(social-facebook.png);}
+div#footer div.social a.twitter {background-image: url(social-twitter.png);}
+div#footer a.github {background-image: url(github.png); min-height: 20px; display: block; position: absolute; right: 0px; top: 5px; background-position: left; background-repeat: no-repeat; padding-left: 30px; white-space: nowrap; }
+@media (max-width: 1040px){
+  div#footer > div.inside {margin: 0px 20px 0px 20px;}
+  div#footer p {margin: 0.5em 0;}
+  div#footer a.external {margin: 0.25em 0; display: inline-block;}
+  div#footer div.social {padding-top: 10px;}
+  div#footer a.github {position: relative; top: 0px; left: 0px; right: auto; margin-top: 15px;}
+}
+
+
+div#envelope {max-width: 1000px; margin: 0px auto;}
+@media (max-width: 1040px){
+  div#envelope {margin: 0px 20px;}
+}
+
+div#envelope div.tagline {margin-top: 15px; padding: 15px 0px 0px 0px; color: #999999; font-size: 1.1em; font-weight: bold; padding-left: 45px; min-height: 35px; background-image: url(crest.png); background-repeat: no-repeat; background-position: left top 10px;}
+div#envelope div.tagline.short {display: none; margin-top: 10px;}
+@media (max-width: 600px){
+  div#envelope div.tagline.long {display: none;}
+  div#envelope div.tagline.short {display: block;}
+}
+
+div#invelope { min-height: 600px;}
+@media (max-width: 600px){
+  div#invelope { min-height: 0px;}
+}
+
+div.title {font-size: 2em; line-height: 1.45em; padding-top: 60px; margin: 0px 0px 10px 0px; color: #0b6377;}
+div.question {font-size: 1.3em; line-height: 1.45em; margin: 10px 0px 20px 0px;}
+@media (max-width: 600px){
+  div.title { padding-top: 30px;}
+}
+
+div.answers {margin: 0px -20px 0px -20px;}
+  @media (max-width: 1040px){
+  div.answers {margin: 0px -20px 0px -20px;}
+}
+
+div.answer {display: table-cell; vertical-align: top; cursor: pointer; box-sizing: border-box; padding: 20px 20px 110px 20px; background-repeat: no-repeat; background-position: bottom center;}
+div.answer div.bubble {background-color: #ffffff; border: 1px solid #999999; border-radius: 4px; padding: 20px; box-shadow: 0px 0px 5px #999999; box-sizing: border-box; color: #333333; line-height: 1.45em; font-size: 1.1em}
+div.answer div.callout {background-image: url(callout-bottom-off.png); background-repeat: no-repeat; background-position: center; height: 9px; margin-top: -1px;}
+div.answer:hover {background-position: bottom 4px center;}
+div.answer:hover div.bubble {color: #000000; box-shadow: 0px 0px 5px #666666; border-color: #666666;}
+div.answer.on {background-position: bottom 4px center; padding: 10px 10px 100px 10px;}
+div.answer.on div.bubble {color: #000000; text-shadow: 1px 1px 0px #ffffff; padding: 30px; background-color: #f3f3f3;}
+div.answer.on div.callout {background-image: url(callout-bottom-on.png);}
+div.answer.yes {background-image: url(icon-off-yes.png);}
+div.answer.no {background-image: url(icon-off-no.png);}
+div.answer.maybe {background-image: url(icon-off-maybe.png);}
+div.answer.on.yes {background-image: url(icon-on-yes.png);}
+div.answer.on.no {background-image: url(icon-on-no.png);}
+div.answer.on.maybe {background-image: url(icon-on-maybe.png);}
+div.answer.on.yes div.bubble {box-shadow: 0px 0px 5px #076f27; border-color: #076f27;}
+div.answer.on.no div.bubble {box-shadow: 0px 0px 5px #7c1010; border-color: #7c1010;}
+div.answer.on.maybe div.bubble {box-shadow: 0px 0px 5px #907813; border-color: #907813;}
+div.answer:focus {outline: none;}
+div.answer:focus div.bubble {outline: 2px dotted #666666; outline-offset: 10px;}
+div.answer:active:focus div.bubble {outline: none;}
+@media (max-width: 600px){
+  div.answer {display: block; padding: 70px 20px 20px 20px; background-position: top center;}
+  div.answer:hover {background-position: top center;}
+  div.answer.on {padding: 70px 20px 20px 20px; background-position: top center;}
+  div.answer div.callout {display: none;}
+  div.answer.on div.bubble {padding: 20px;}
+}
+
+div.finalscore {text-align: center; margin-top: 0px; padding-top: 150px;}
+div.finalscore span.icon {display: inline-block; min-height: 20px; background-repeat: no-repeat; background-position: left center; padding-left: 25px; margin-right: 1em;}
+div.finalscore span.icon.yes {background-image: url(icon-small-yes.png)}
+div.finalscore span.icon.maybe {background-image: url(icon-small-maybe.png)}
+div.finalscore span.icon.no {background-image: url(icon-small-no.png)}
+div.verdict {font-size: 2em; color: #333333; text-align: center; margin: 40px 0px 00px 0px; line-height: 1.25em;}
+div.subverdict {font-size: 1.3em; color: #666666; text-align: center; margin: 30px 0px 0px 0px; line-height: 1.25em;}
+@media (max-width: 600px){
+  div.finalscore {padding-top: 100px;}
+}
+
+div.mid {text-align: center; padding-top: 200px; }
+div.mid span.button {background-color: #0b6377; color: #ffffff; font: inherit; font-size: 1.3em; padding: 20px 40px; border: 1px solid #ffffff; border-radius: 8px; box-shadow: 0px 0px 5px #999999; cursor: pointer; display: inline-block;}
+div.mid span.button:hover {box-shadow: 0px 0px 5px #333333;}
+div.mid span.button:active {box-shadow: inset 0px 0px 5px #333333;}
+@media (max-width: 600px){
+  div.slogan {padding-top: 100px;}
+}
+
+div#summary {margin: 20px 0px; position: relative; min-height: 65px;}
+
+div#nav {position: absolute; top: 0px; right: 0px;}
+div#nav span.button {background-color: #0b6377; color: #ffffff; font: inherit; font-size: 1.1em; padding: 15px 30px; border: 1px solid #ffffff; border-radius: 8px; box-shadow: 0px 0px 5px #999999; cursor: pointer; display: inline-block; }
+div#nav span.button:hover {box-shadow: 0px 0px 5px #333333;}
+div#nav span.button:active {box-shadow: inset 0px 0px 5px #333333;}
+div#nav span.button#prev {background-color: #999999; margin-right: 10px;}
+div#nav span.button:focus {outline: 2px dotted #666666; outline-offset: 5px;}
+div#nav span.button:active:focus {outline: none;}
+@media (max-width: 600px){
+  div#nav {position: relative; text-align: center; margin-top: 30px;}
+}
+
+div#score {display: inline-block; padding: 20px 0px;}
+div#score span.icon {display: inline-block; min-height: 20px; background-repeat: no-repeat; background-position: left center; padding-left: 25px; margin-right: 1em;}
+div#score span.icon.yes {background-image: url(icon-small-yes.png)}
+div#score span.icon.maybe {background-image: url(icon-small-maybe.png)}
+div#score span.icon.no {background-image: url(icon-small-no.png)}
+@media (max-width: 600px){
+  div#score {display: block; text-align: center; margin-top: 20px;}
+  div#score span.icon {margin-left: 0.5em; margin-right: 0.5em;}
+}
+
+div#tools {display: inline-block; padding: 15px 0px;}
+div#tools span#restart {color: #999999; cursor: pointer;}
+div#tools span#restart:hover {color: #0b6377;}
+div#tools span#restart:focus {outline: 2px dotted #666666; outline-offset: 5px;}
+div#tools span#restart:active:focus {outline: none;}
+div#tools span#restart:active {position: relative; top: 1px; left: 1px;}
+@media (max-width: 600px){
+  div#tools {display: block; text-align: center; margin-top: -20px;}
+}
