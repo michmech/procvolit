@@ -119,7 +119,9 @@ function finish(e){
     else if(yes==qs.length) verdict=shuffleArray(["Stoprocentní shoda! Ty a Strana zelených jste si souzeni.", "No jasně! Ty a Strana zelených jste si souzeni."])[0];
     else if(yes+(maybe/2)>no && no<2) verdict=shuffleArray(["Dost dobrý! Ty a Strana zelených se na většině věcí shodnete.", "No jasně! Vypadá to, že ty a Strana zelených jste kompatibilní."])[0];
     else if(yes+(maybe/2)>no && no>=2) verdict=shuffleArray(["Perfektní shoda to není, ale na většině věcí se ty a Strana zelených shodnete.", "Perfektní shoda to není, ale vypadá to, že ty a Strana zelených jste kompatibilní."])[0];
-    else if(yes>0 || maybe>0) {verdict="Ty a Strana zelených mnoho společného nemáte, ale na pár věcech se shodnete."; showSubverdict=false; }
+    else if(yes==1) {verdict="Ty a Strana zelených mnoho společného nemáte, ale na jedné věci se shodnete."; showSubverdict=false; }
+    else if(yes>0) {verdict="Ty a Strana zelených mnoho společného nemáte, ale na pár věcech se shodnete."; showSubverdict=false; }
+    else if(maybe>0) {verdict="No, ty a Strana zelených toho moc společného nemáte."; showSubverdict=false; }
     else {verdict="Hm. Ty a Strana zelených se asi budete muset shodnout na tom, že se na ničem neshodnete."; showSubverdict=false; }
 
     renderVerdict(verdict, showSubverdict);

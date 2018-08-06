@@ -1,8 +1,4 @@
-body {font-family: sans-serif; background-color: #ffffff; margin: 0; padding: 0; line-height: 1.3em; font-size: 1rem;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-}
+body {font-family: sans-serif; background-color: #ffffff; margin: 0; padding: 0; line-height: 1.3em; font-size: 1rem;}
 
 div#header {background-color: #2d934d;}
 div#header > div.inside {max-width: 1000px; margin: 0px auto; padding: 20px 0px; font-size: 1.4em; position: relative;}
@@ -64,7 +60,11 @@ div.question {font-size: 1.3em; line-height: 1.45em; margin: 10px 0px 20px 0px;}
   div.title { padding-top: 30px;}
 }
 
-div.answers {margin: 0px -20px 0px -20px;}
+div.answers {margin: 0px -20px 0px -20px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
   @media (max-width: 1040px){
   div.answers {margin: 0px -20px 0px -20px;}
 }
@@ -116,10 +116,15 @@ div.mid span.button:active {box-shadow: inset 0px 0px 5px #333333;}
   div.slogan {padding-top: 100px;}
 }
 
-div#summary {margin: 20px 0px; position: relative; min-height: 65px;}
+div#summary {margin: 20px 0px; position: relative; min-height: 65px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
 
 div#nav {position: absolute; top: 0px; right: 0px;}
-div#nav span.button {background-color: #0b6377; color: #ffffff; font: inherit; font-size: 1.1em; padding: 15px 30px; border: 1px solid #ffffff; border-radius: 8px; box-shadow: 0px 0px 5px #999999; cursor: pointer; display: inline-block; }
+div#nav span.button {background-color: #0b6377; color: #ffffff; font: inherit; font-size: 1.1em; padding: 15px 30px; border: 1px solid #ffffff; border-radius: 8px; box-shadow: 0px 0px 5px #999999; cursor: pointer; display: inline-block;
+}
 div#nav span.button:hover {box-shadow: 0px 0px 5px #333333;}
 div#nav span.button:active {box-shadow: inset 0px 0px 5px #333333;}
 div#nav span.button#prev {background-color: #999999; margin-right: 10px;}
