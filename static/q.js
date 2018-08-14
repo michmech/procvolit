@@ -116,7 +116,7 @@ var qs=[
       },
       {
         value: "yes",
-        text: "Návrat hazardu nedopustit! Sice nerad omezuju svobodu volby, ale herní hazard je až příliš navýkový a nebezpečný. Musíme volit menší zlo, a menším zlem je tady zakázat to pro všechny."
+        text: "Návrat hazardu nedopustit! Sice nerad omezuju svobodu volby, ale herní hazard je až příliš návykový a nebezpečný. Musíme volit menší zlo, a menším zlem je tady zakázat to pro všechny."
       },
       {
         value: "maybe",
@@ -167,4 +167,3 @@ var qs=[
     ]
   },
 ];
-
