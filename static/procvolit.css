@@ -1,26 +1,28 @@
 body {font-family: sans-serif; background-color: #ffffff; margin: 0; padding: 0; line-height: 1.3em; font-size: 1rem;}
 
-div#header {background-color: #2d934d;}
-div#header > div.inside {max-width: 1000px; margin: 0px auto; padding: 20px 0px; font-size: 1.4em; position: relative;}
-div#header div.headline {color: #ffffff; font-weight: bold;}
-div#header div.headline a {color: #ffffff; text-decoration: none;}
-div#header div.headline a:hover {color: #eeeeee;}
-div#header div.social {position: absolute; top: 13px; right: 0px;}
+div#header {background-color: #83d9ce; background-image: url(/back.jpg); background-position: center; background-repeat: no-repeat; background-size: 100%;}
+div#header > div.inside {line-height: 1.25em; max-width: 1000px; margin: 0px auto; padding: 35px 0px 35px 65px; box-sizing: border-box; font-size: 1.4em; position: relative;}
+div#header div.headline {color: #ffffff; font-weight: bold; text-shadow: 1px 0px 0px #333333, -1px 0px 0px #333333, 0px 1px 0px #333333, 0px -1px 0px #333333;}
+div#header div.headline a {color: #cefbdc; text-decoration: none;}
+div#header div.headline a:hover {color: #a9f0bf;}
+div#header a.logo {position: absolute; top: 23px; left: 0px; width: 40px; height: 40px; background-color: #2d934d; border: 2px solid #ffffff; border-radius: 30px; background-image: url(favicon-32x32.png); background-position: center; background-repeat: no-repeat;}
+div#header div.social {position: absolute; top: 30px; right: 0px;}
 div#header div.social a {width: 30px; height: 30px; display: inline-block; border: 2px solid #cccccc; border-radius: 20px; margin-left: 5px;}
 div#header div.social a:hover {border-color: #dddddd;}
 div#header div.social a.facebook {background-image: url(social-facebook.png);}
 div#header div.social a.twitter {background-image: url(social-twitter.png);}
 @media (max-width: 1040px){
-  div#header > div.inside {margin: 0px 20px;}
+  div#header > div.inside {margin: 0px 20px; font-size: 1.2em; }
 }
 @media (max-width: 600px){
   div#header div.social {display: none;}
 }
 
-div#footer {background-color: #e6e6e6; min-height: 300px; padding: 25px 0px;}
+div#footer {background-color: #e6e6e6; min-height: 300px; padding: 0px 0px 25px 0px;}
+div#footer div.bar {height: 20px; margin-bottom: 50px; background-color: #83d9ce; background-image: url(/back.jpg); background-position: center bottom; background-repeat: no-repeat; background-size: 100%;}
 div#footer > div.inside {max-width: 1000px; margin: 0px auto 20px auto; color: #666666; text-shadow: 1px 1px 0px #ffffff; line-height: 1.5em; position: relative;}
 div#footer p {margin: 0.25em 0;}
-div#footer p.bold {font-weight: bold;}
+div#footer p.bold {font-weight: bold; margin-bottom: 15px;}
 div#footer a {color: #0b6377; text-decoration: none;}
 div#footer a:hover {color: #0a768f;}
 div#footer div.social {}
@@ -42,19 +44,19 @@ div#envelope {max-width: 1000px; margin: 0px auto;}
   div#envelope {margin: 0px 20px;}
 }
 
-div#envelope div.tagline {margin-top: 15px; padding: 15px 0px 0px 0px; color: #999999; font-size: 1.1em; font-weight: bold; padding-left: 45px; min-height: 35px; background-image: url(crest.png); background-repeat: no-repeat; background-position: left top 10px;}
+div#envelope div.tagline {margin-top: 15px; padding: 15px 0px 0px 0px; color: #333333; font-size: 1.1em; }
 div#envelope div.tagline.short {display: none; margin-top: 10px;}
 @media (max-width: 600px){
   div#envelope div.tagline.long {display: none;}
   div#envelope div.tagline.short {display: block;}
 }
 
-div#invelope { min-height: 600px;}
+div#invelope { min-height: 500px;}
 @media (max-width: 600px){
   div#invelope { min-height: 0px;}
 }
 
-div.title {font-size: 2em; line-height: 1.45em; padding-top: 60px; margin: 0px 0px 10px 0px; color: #0b6377;}
+div.title {font-size: 2em; line-height: 1.45em; padding-top: 40px; margin: 0px 0px 20px 0px; color: #0b6377;}
 div.question {font-size: 1.3em; line-height: 1.45em; margin: 10px 0px 20px 0px;}
 @media (max-width: 600px){
   div.title { padding-top: 30px;}
