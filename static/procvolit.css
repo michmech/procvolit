@@ -155,3 +155,44 @@ div#tools span#restart:active {position: relative; top: 1px; left: 1px;}
 @media (max-width: 600px){
   div#tools {display: block; text-align: center; margin-top: -20px;}
 }
+
+div.info {
+  margin: 60px 0px 60px 0px;
+  font-size: 1em;
+  overflow: auto;
+  line-height: 1.5em;
+}
+div.info div.leftie {
+  float: left;
+  width: 30%;
+  padding-top: 1px;
+}
+div.info div.rightie {
+  margin-left: 40%;
+  padding-top: 1px;
+}
+@media (max-width: 1050px) {
+  div.info {margin: 0px 0px 30px 0px;}
+}
+@media (max-width: 800px) {
+  div.info div.leftie {
+    float: none;
+    width: auto;
+    padding-top: 0px;
+  }
+  div.info div.rightie {
+    margin-left: 0;
+    padding-top: 0px;
+  }
+}
+div.info h1 {font-size: 2em; line-height: 1.25em; font-weight: normal;}
+div.info p.subtitle {font-size: 1.15em; line-height: 1.65em; color: #445566; margin-top: -1em; margin-bottom: 1.5em;}
+div.info p.subtitle img {max-height: 200px;}
+div.info h2 {font-size: 1.5em; line-height: 1.15em; margin: 1.25em 0 0.75em 0; font-weight: normal;}
+div.info h3 {font-size: 1.15em; line-height: 1.15em; margin: 1.25em 0 0.5em 0; font-weight: normal;}
+div.info p {margin: 0 0 1em 0px;}
+div.info hr {border: 0px; border-top: 1px solid #cccccc; margin: 3em 0;}
+div.info a {color: #0f6ba8; text-decoration: none;}
+div.info a:hover {color: #209CEE;}
+div.info p.lead {font-size: 1.15em; line-height: 1.65em; color: #445566}
+div.info p.meta {color: #445566}
